@@ -1,0 +1,103 @@
+NOTAS
+♦ Cada vez que se trabaja en el bash se deben cerrar el Visual Studios y descartar cambios en el GITHUB
+
+
+BASH
+cd =================================================> change directory
+cd .. ==============================================> 
+ls =================================================> Hace una lista del contenido de la ruta
+git init ===========================================> Crea repositorio en el directorio actual
+pwd ================================================> Muestra el directorio actual
+salir del editor vim ================================> Presionar {esc} y luego escribir :qv {enter}
+Presionar esc  y luego q para salir del editor
+
+ESTADOS
+git log --graph =====================================> Ver historial
+git status ==========================================> Ver el estado de git
+git reflog ==========================================> Ver la traza de los commit
+git checkout -b development   =======================> Crear rama  Modo Fastward
+git remote -V =======================================> Mostrar todos los remotos
+git show v0.0.1 =====================================> Muestra informacion del tag
+git log --pretty=format:"%h - %an, %ar : %s" ========> Muestra los commit bonitos
+git tag =============================================> Muestra todas las versiones
+
+CONFIGURACIONES
+git init .   ========================================> Inicializar control de versiones en el directorio en la te encuetras (Practicamente lo primero ha realizar)
+git config --global user.name "Mi Nombre"  ==========> Conectar con repositorio remoto
+git remote add {nombre_del_remote url_del_remoto}  ==> Agregar repositorio remoto se debe agregar la url que da la plataforma en este caso github
+git config --global core.editor Atom ================> Configura en editor de texto por defecto
+git config --global user.email "mill@gmail.com" =====> Configurar Git para agregar commit
+
+COMMIT
+git commit ==========================================> Es para crear puntos de partida, despues entra en un editor de codigo desde terminal llamado bin, presionar tecla i
+git commit -m '{Mensaje del commit}'  ===============> Hacer confirmaciones con mensajes.
+git add =============================================> Añade los archivo que se desean seguir
+git add {nombre del archivo} ========================> Agregar archivos la staged
+git add Documentation/\*.txt  =======================> Agregar varios archivos con extension .txt
+git add git-*.sh ====================================> Agregar archivos que comiencen con git- y extension .sh
+git add .  ==========================================> Agregar todos los archivos del proyecto al 'stage area'
+git reset <archivo>  ================================> Lo contrario de add saca archivos de staging area
+git commit --amend -m '{Nuevo mensaje del commit}'===> Cambia el titulo del ultimo commit
+git checkout {nombre del archivo} ===================> Quita las modificaciones del archivo
+git reset --hard HEAD~1 ========================================>Elimina el ultimo commit
+
+RAMAS
+git branch ==========================================> Muestra las versiones alternativas del codigo
+git branch <<nombre de la nueva rama>> ==============> Crea la rama
+git branch -a =======================================> Enlista todas las rgit statusamas
+Git branch -D <<Rama a eliminar>> ===================> Elimina una rama
+git checkout -b <<Nombre de la rama>>  ==============> Crea la rama y se mueve automaticamente a esa rama
+git checkout <<rama en la que se desea trabajar>> ===> Cambia de rama
+
+MERGE
+git merge --abort  ==================================> Abortar merge
+git merge <<Rama  que va a ser absorvida>> ========> tiene que hacerse desde la rama absorvedora
+
+OTROS
+git tag v0.0.1 -m "Esta es mi primera version" ======> Agregar tags de version
+git push origin <<Nombre del tag>>  =================> Envia la tag creada al servidor
+git tag =============================================> Muestra todas las versiones
+
+REMOTO
+git pull origin <<nombre de la rama>>  ==============> Trae la sincronizacion desde servidor
+git push origin master -f ===========================> Forza a subir los cambios 
+git push origin <<Nombre de la rama>> ===============> Para subir el head al repositorio
+git remote add origin <<server>> ====================> Conecta con el repositorio remoto
+git push origin <<branch>> ==========================> Sube una rama creada al repositorio remoto
+git push origin <<Nombre del tag>>  =================================> Envia la tag creada al servidor
+
+________________________________________________________________________________________________________________________↓
+git log --pretty=format:"%h - %an, %ar : %s" ========> Muestra los commit bonitosOpción Descripción de la salida
+%H Hash de la confirmación
+%h Hash de la confirmación abreviado
+%T Hash del árbol
+%t Hash del árbol abreviado
+%P Hashes de las confirmaciones padre
+%p Hashes de las confirmaciones padre abreviados
+%an Nombre del autor
+%ae Dirección de correo del autor
+%ad Fecha de autoría (el formato respeta la opción -–date)
+%ar Fecha de autoría, relativa
+%cn Nombre del confirmador
+%ce Dirección de correo del confirmador
+%cd Fecha de confirmación
+%cr Fecha de confirmación, relativa
+%s Asunto
+••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••↑
+
+________________________________________________________________________________________________________________________↓
+PARA ACTUALIZAR UN COMMIT ANTERIOR
+	1-ELEGIR EL COMMIT AL CUAL SE DESEA REGRESAR  -------------------> git checkout <Numero del commit> 
+	2-CREAR RAMA TEMPORAL -------------------------------------------> git branch  temp
+        3-REGRESAR A LA RAMA A LA CUAL SE DESEA REVERTIR EL COMMIT ------> git checkout <NOMBRE DE LA RAMA>
+        4-HACER UN MERGE ------------------------------------------------> git merge temp
+••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••↑
+ 
+________________________________________________________________________________________________________________________↓
+	1-Discard all local changes, but save them for possible re-use later -----> git stash
+	2-Discarding local changes (permanently) to a file -----------------------> git checkout -- <file>
+	3-Discard all local changes to all files permanently ---------------------> git reset --hard
+••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••↑
+
+
+
