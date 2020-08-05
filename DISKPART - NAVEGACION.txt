@@ -1,0 +1,13 @@
+diskpart ==========================================> Abrir la consola de diskpart.
+list disk =========================================> Ver las unidades instaladas.
+select disk <n> ===================================> Seleccionar la unididad numero <n>.
+detail disk =======================================> Ver los detalles del disco selececcionado.
+select volume <n> =================================> Seleccionar el volumen (particion) de la unidad.
+format fs=ntfs ====================================> Dar formato ntfs a la unidad seleccionada en el volumen seleccionado. 
+clean =============================================> Limpia configuracion de la unidad seleccionada.
+create partition primary size=<cantidad en MB> ====> Crea particion en la unidad seleccionada.
+create partition primary ==========================> Crea particion con el tamño disponible.
+list partition ====================================> Ver particiones de la unidad seleccionada.
+help format =======================================> Ver ejemplos de formato.
+list volume =======================================> Ver volumenes (particiones) de la unidad seleccionada.
+

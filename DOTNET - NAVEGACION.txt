@@ -1,0 +1,6 @@
+dotnet --help =====================> Informacion de los comando y propiedades.
+dotnet run Startup.cs =============> Inicia en consola el servidor del proyecto.
+dotnet new --list =================> Mustra los modelos disponibles para crear un proyecto.
+dotnet new mvc --help =============> Muestra los template disponibles para mvc.
+dotnet new mvc --auth Individual ==>Crea un proyecto MVC con autenticacion individual.
+
