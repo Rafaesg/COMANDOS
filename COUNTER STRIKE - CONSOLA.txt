@@ -1,0 +1,1212 @@
+Comandos zBot (Bots CS 1.6)
+
+
+Agregar conexiones HAMACHI
+SV_LAN 0     <--------------- Importante para que conecte
+mp_autoteambalance 0 <------- Para que no se pasen los bot de un lado a otro
+bot_add_t <-----------------  Agregar bot terrorista
+ mp_limitteams 10 <----------- Diferencia max entre equipos
+
+
+bot_allow_grenades 0/1
+Deshabilita/habilita el uso de las granadas.
+
+bot_allow_machine_guns 0/1
+Deshabilita/habilita el uso de las armas.
+
+bot_allow_pistols 0/1
+Deshabilita/habilita el uso de las pistolas.
+
+bot_allow_rifles 0/1
+Deshabilita/habilita el uso de los rifles.
+
+bot_allow_shield 0/1
+Deshabilita/habilita el uso del escudo.
+
+bot_allow_shotguns 0/1
+Deshabilita/habilita el uso de las escopetas.
+
+bot_allow_snipers 0/1
+Deshabilita/habilita el uso de los snipers.
+
+bot_allow_sub_machine_guns 0/1
+Deshabilita/habilita el uso de las metralladoras.
+
+bot_about
+Muestra la versión de los zBot.
+
+bot_chatter 0/1
+Deshabilita/habilita el uso del chat por voz.
+
+bot_difficulty 0/1/2/3
+Especifica la dificultad de los bots[/b] Cero (fácil), Uno (normal), Dos (difícil), Tres (Expertos).
+
+bot_join_after_player 0/1
+Deshabilita/habilita que los bots entren a la partida antes de que el jugador entre.
+
+bot_join_team ct/t/any
+Agrega un bot al equipo especificado.
+
+bot_nav_edit 0/1
+Deshabilita/habilita la edición manual de la navegación de los bots en un mapa.
+
+bot_quota ##
+Indica el número mínimo de bots en una partida.
+
+bot_show_danger 0/1
+Oculta/muestra los lugares peligrosos para los distintos equipos[/b] líneas azules para los CTs, líneas rojas para los Terroristas.
+
+bot_show_nav 0/1
+Oculta/muestra los lugares por donde pueden andar los bots.
+
+bot_stop 0/1
+No obliga/obliga a los bots quedarse quietos, pero que respondan en casode ver a un enemigo.
+
+bot_walk 0/1
+No obliga/obliga a los bots a caminar.
+
+bot_zombie 0/1
+No obliga/obliga que los bots se queden quietos
+Comandos para el modo CSDM
+Comandos para el modo CSDM
+
+
+Comandos CVars
+
+Estos comandos se cambian en el archivo addonsamxmodxconfigsamxx.cfg
+
+csdm_active [0|1]
+Activa o no el modo CSDM.
+
+csdm_freeze_time 4.0
+Especifica el tiempo de protección de un jugador al aparecer.
+
+csdm_add_ítems [0|1]
+Si ponemos 0 se le mostrará un menú a los jugadores para que escojan el arma que quieren. Si lo ponemos en 1, entonces se tirarán armas por todo el mapa para que el jugador las recoja.
+
+csdm_ítem_time 20.0
+Especifica el tiempo que los ítems se encuentran tirados por el mapa.
+
+csdm_random_spawns [0|1]
+Sin Especificación.
+
+csdm_kill_all [0|1]
+Si lo ponemos en 1, activamos el modo de "todos contra todos". En 0, solo a los enemigos habilituales del CS.
+
+csdm_drop_packs [0|1]
+Activa o no si el jugador al morir dejan en el piso los ítems agarrados.
+
+csdm_drop_weapons [0|1]
+Activa o no si el jugador al morir dejan en el piso las larmas agarradas.
+
+csdm_delete_time 20.0
+Especifica el tiempo que los ítems se quedan tirados en el piso.
+
+csdm_allow_clguns [0|1]
+Activa o no si el jugador puede obtener armas poniendo guns en la consola.
+
+csdm_hold_many [0|1]
+Activa o no que el jugador pueda cargar varias armas a la vez.
+
+csdm_auto_equip [0|1]
+Activa o no que cada jugador al nacer, compre automáticamente chaleco y casco.
+
+csdm_auto_gren [0|1]
+Activa o no que cada jugador al nacer, compre granadas automáticamente.
+
+csdm_spawn_spam [0|1]
+Activa o no que se muestre a cada jugador un mensaje con información al nacer.
+
+csdm_enable_amenu [0|1]
+Activa o no el menú de compras de chaleco y casco.
+
+csdm_enable_gmenu [0|1]
+Activa o no el menú de compras de granadas.
+
+csdm_spawn_protect [0|1|2]
+Si lo ponemos en 0, desactivamos la protección del jugador al nacer. En 1, especficificamos una normal protección
+y en 2, solo es protegido mientras transcurra el tiempo de protección (csdm_freeze_time).
+
+csdm_medkit [15]
+Especificamos cuánta vida nos da cada kit. Por defecto, 15.
+
+csdm_battery [15]
+Especificamos cuánto chaleco nos da cada kit. Por defecto, 15.
+
+csdm_explain [0|1]
+Activa o no el mensaje de explicación de cada ítem que va levantando el jugador.
+
+csdm_auto_drop [0|1]
+Activa o no que el jugador tire automáticamente un arma que han comprado nueva.
+
+csdm_pack_jumps [0|1]
+Si lo ponemos en 0, el pack del "salto largo" no será tirado por el jugador al morir.
+
+csdm_asskicr [0|1]
+Sin especificación.
+
+csdm_voting [0|1|2]
+Si lo ponemos en 1, todos pueden votar por el modo CSDM. En 2 solo los admins pueden hacerlo y en 0, nadie puede..
+
+csdm_voting [abc]
+Combine a, b, c para habilitar las diferentes opciones de votación. "a" es el modo csdm habilitado/deshabilitado. "b" es el modo menú/ítem. "c" es para que sea libre para votar.
+
+csdm_ratio [0.6]
+Especifica el radio requerido para que la votación sea llevada a cabo.
+
+csdm_votetime [45]
+Especifica el tiempo que hay que esperar para votar.
+
+csdm_nextvote [180]
+Especifica cuánto tiempo tiene que pasar para realizar otra votación.
+
+
+Comandos para el Servidor
+
+Estos comandos pueden ser cambiados desde la consola durante el juego.
+
+csdm_enable [0|1]
+Habilita o deshabilita el modo CSDM.
+
+csdm_ítems [0|1]
+en 0 se usa el menú tradicional para comprar. En 1, el modo ítems.
+
+csdm_version
+Información sobre la versión del CSDM.
+
+csdm_setspawn <0|1|2>
+Crea un punto de aparición para los jugadores. En 0, especificamos que sea para cualquiera. En 1 para los Terrors y en 2 para los CTs.
+
+csdm_setspawnv <0|1|2>
+Parecido al csdm_setspawn. ¿Cuál es la diferencia? No lo sé.
+
+csdm_delspawn
+Elimina el punto de nacimiento de la lista.
+
+csdm_setent
+Crea un ítem en el lugar donde estamos parados. Los disponibles son: pistol_ammo, shotgun_ammo, smg_ammo, rifle_ammo, full_ammo, armor, ítem_battery, ítem_healthkit, ítem_longjump y [/i]weapon_<nombre>[/i]. El escudo NO se puede usar en este comando.
+
+csdm_delent
+Elimina el ítem sobre el que estamos parado / mirando.
+
+csdm_viewspawns
+Muestra marcas en el mapa dónde hay puntos de nacimiento.
+
+csdm_spawncount
+Muestra el número de puntos de nacimiento disponibles en el mapa.
+
+csdm_rement
+Elimina el ítem especificándole el número del mismo. No se recomienda usar, sobre todo para valores inferiores a 33.
+
+csdm_origin
+Muestra un mensaje con el origen. Es usado por admins para reparar o setear puntos de nacimiento o ítems.
+
+csdm_near
+Muestra el próximo punto de nacimiento. Es usado por admins para reparar o setear puntos de nacimiento o ítems.
+
+csdm_set_amenu
+Configura el menú del chaleco.
+
+csdm_set_gmenu
+Configura el menú de las granadas.
+
+csdm_killall
+Habilita o no el modo de "todos contra todos".
+
+csdm_look
+Muestra información del ítem que estamos mirando. Se recomienda no mirar para el lado del cielo, porque seguramente se va a tildar el juego .
+
+csdm_entinfo
+Muestra el nombre de una identidad. Requiere del XTRAFUN.
+
+csdm_entdump [n]
+Muestra una tabla con información de las entidades empezando desde n (se recomienda empezar desde -150). Automáticamente crea un log en addonsamxlogscsdm-ents.txt. Requiere del XTRAFUN.
+
+csdm_cancelvote
+Cancela la votación en proceso.
+
+csdm_vote OR vote_csdm
+Inicia la votación para habilitar el modo CSDM.
+
+
+Comandos para los Clientes
+
+respawn
+Si estás muerto, con este comando volverás a nacer.
+
+guns
+Si está habilitado el uso de este comando, podrás obtener armas.
+
+give
+Si está habilitado, podés conseguir directamente el arma que querés. Por ejemplo give ak47.
+
+enable_menu
+Habilita o no la selección autmática del arma en el meún.
+
+vote_csdm o csdm_vote
+Inicia la votación para habilitar el modo CSDM.
+Comandos Amx MOD
+Comandos para el AMX Mod 
+Los parametros entre "< >" son obligatorios, mientras que los que estan entre "[ ]" son opcionales.
+
+
+amx_kick <nombre o #id> [motivo]
+Echa del server al jugador, si el motivo tiene 2 palabras o más, tienen que usar comillas (").
+
+amx_kickmenu
+Muestra el menu de kicks.
+
+amx_ban <minutos> <IP o authid> [motivo]
+Prohibe la entrada de un jugador a tu server por el tiempo que quieras.
+
+amx_banip <minutos> <nombre o #userid> [motivo]
+Idem anterior, solo que para una IP.
+
+amx_banid <minutos> <nombre o #userid> [motivo]
+Idem anterior, solo que banea a una Authid en particular.
+
+amx_unban <IP o authid>
+"Desbanea" a un jugador ya baneado.
+
+amx_banmenu
+Abre el menu de los Bans.
+
+amx_restrict <on/off/list/save/load> <accion>
+Restringe la compra de un arma o una categoría específica**.
+
+A su vez tiene algunas variables para direntes funciones:
+amx_restrict on <nombre de arma o categoria>
+Lo básico.
+amx_restrict off <nombre de arma o categoria>
+Permite poder volver a comprar un arma restringida.
+amx_restrict list
+Muestra lista de armas y equipamentos disponibles.
+amx_restrict save
+Guarda las restricciones.
+amx_restrict load <*.cfg>
+Carga restricciones desde un archivo *.cfg.
+
+**Las categorias antes mencionadas son:
+ammo - equip - pistol - shotgun - sub - rifle - machine
+Ej.: amx_restrict on shield
+
+*amx_help
+Muestra los primeros 10 comandos disponibles segun tu nivel de usuario con una pequeña ayuda, ejemplo o simplemente la sintaxis del comando.
+Para ver los 10 siguientes, pongan amx_help 11 y les muestra del 11 al 20. Pueden seguir haciendo eso hasta que no haya mas comandos disponibles.
+
+amx_cvar <comando> <valor>
+Cambia el valor de un comando de server en particular.
+Ej.: amx_cvar sv_gravity 500
+
+amx_cfg <*.cfg>
+Carga un archivo *.cfg.
+Ej.: amx_cfg server.cfg
+
+amx_cfgmenu
+Abre el menu de cfgs.
+
+amx_cancelvote
+Cancela el ultimo voto.
+
+amx_chat <mensaje>
+Manda mensaje a los admins.
+
+amx_tsay <color> <mensaje>
+Manda un mensaje en letras del color que queramos a todos los jugadores del server. El mensaje se muestra en la izquierda de nuestra pantalla.
+Ej.: amx_tsay "red" "hola!"
+
+amx_csay <color> <mensaje>
+Idem tsay, solo que lo manda en el centro de la pantalla.
+
+amx_psay <nombre o #userid> <mensaje>
+Manda un mensaje privado a un jugador en particular.
+Ej.: amx_psay pepito "planta la c4!"
+
+amx_map <nombre de mapa>
+Cambia al mapa deseado.
+Ej.: amx_map de_aztec
+
+amx_slap <nombre o #userid> <daño>
+Le saca el daño que queramos a algun jugador.
+Ej.: amx_slap pepito 99
+
+amx_slay <nombre o #userid>
+Mata a un jugador.
+Ej.: amx_slay pepito
+
+amx_slapmenu
+Muestra el menu de slaps/slays
+
+amx_vote <pregunta> <opcion1> <opcion2>
+Hace una votacion de 2 opciones a los jugadores en el server.
+
+amx_votekick <nombre o #userid>
+Pregunta al server para sacar a un jugador.
+Ej.: amx_votekick pepito
+
+amx_votemap <mapa> [mapa] [mapa] [mapa]
+Inicia una votacion para los siguientes mapas.
+
+*amx_who
+Muestra una lista de los jugadores en el server, asi como tambien el wonid y el nivel de acceso de cada uno.
+
+amx_leave <tag> [tag1] [tag2] [tag3]
+Kickea a todos los jugadores sin los tags que pusimos.
+
+amx_pause
+Lo dice el comando.
+
+amx_rcon <comando rcon>
+Ejecuta un comando en la consola del server.
+
+amx_plugins
+Muestra una lista de todos los plugins cargados.
+
+amxmodmenu
+Muestra el menu principal del AMX.
+
+amx_cvarmenu
+Muestra el menu de comandos.
+
+amx_mapmenu
+Muestra el menu de cambio de mapas.
+
+amx_votemapmenu
+Muestra el menu de voto de mapas.
+
+amx_teammenu
+Muestra el menu de cambio de bandos.
+
+amx_clcmdmenu
+Muestra el menu de comandos del cliente.
+
+amx_restmenu
+Muestra el menu de restriccion de armas.
+
+amx_teleportmenu
+Muestra el menu de teleport.
+
+amx_statscfgmenu
+Muestra el menu de configuracion de estadisticas.
+
+
+Comandos "say" disponibles para cualquier jugador.
+
+Estos comandos los puede usar cualquier jugador, sea admin o no.
+
+say /hp
+Muestra informacion acerca del jugador que te mato.
+
+say /statsme
+Muestra tus estadisticas.
+
+say /stats
+Muestra las estadisticas de los demas.
+
+say /top15
+Muestra los 15 mejores jugadores del server.
+
+say /rank
+Muestra tu ranking en el server.
+
+say nextmap
+Muestra el proximo mapa del ciclo.
+
+say timeleft
+Muestra el tiempo restante antes de cambiar de mapa.
+
+say thetime
+Muestra la hora.
+Comandos de red y conexion
+Comandos para Red y Conexión
+
+Con estos comandos podrás configurar tu red y conexión a internet.
+
+
+cl_allowdownload 1
+Permite bajar del servidor mapas modelos y logos al entrar en el server. Si esta en 0, el half life no les va a bajar absolutamente NINGUN archivo (sea un mapa o un logo) al conectarse al server. Es decir, que si el server cambia de mapa, y no tienen el mapa, o algún archivo que el server requiera transferir, los va a echar.
+
+cl_allowupload 1
+Permite la subida de mapas, modelos y logos al entrar en el server.
+
+cl_cmdrate 30
+Numero de veces por segundo que el cliente pedirá información al servidor.
+
+56k: 30
+Cable: 45
+LAN: 50
+
+cl_dlmax 128
+Establece el numero máximo de kb a la que podremos bajar del servidor.
+
+cl_download_ingame 1
+Permite la descarga mientras se juega, esto evita que el half-life les baje nuevos logos si entra nueva gente a jugar donde están jugando.
+
+cl_gaitestimation 1
+Activa la "estimación de pasos" que sirve principalmente para el aspecto de "andar volando" a 0 será el valor adecuado para una visualización adecuada de la animación pero aumenta el lag.
+
+cl_latency 0
+Fija el valor de latencia en el cliente.
+
+cl_lb 0
+Activa la predicción de tiro (si cl_lw está en 1). Si está en 1, parecerá que los tiros no dan.
+
+cl_lc 1
+Inicia la "compensación de lag".
+
+cl_lw 1
+Activa las animaciones de las armas y sonido por el cliente (da lag). En 1, las animaciones de las armas y sonido se dispararan al instante, pero el verdadero disparo que interpreta el servidor no correspondera, por lo que parecerá que pegas y no matas.
+
+cl_nopred 0
+Desactiva la "predicción del cliente" (1 incrementa el lag).
+
+cl_rate 9000
+Fija el ratio por el que el cliente mandara datos al servidor por segundos. Modem: 4000 Cable: 10000, T1: 20000. Un valor mal puesto aumenta el lag.
+
+cl_resend 6
+Fija la cuenta de reenvío (numero de veces que se reenvía el paquete).
+
+cl_updaterate 20
+Fija el numero de refrescos por segundo que el cliente pedirá al servidor. Cable-DSL: 40 LAN: 50.
+
+
+Comandos para el Servidor
+
+Estos comandos sirven para administrar servidores.
+
+
+addip <tiempo> <ip>
+Banea al jugador según su numero de IP, el tiempo esta en minutos (0 para tiempo indeterminado).
+
+changelevel <nombre del mapa>
+Cambia al mapa deseado.
+
+hostname <nombre>
+Establece el nombre del Servidor.
+
+kick #<numerodeplayer>
+Echa al jugador elegido, tambien se puede kickear escribiendo su nombre exacto.
+
+listip
+Muestra los IP que estan en la lista de jugadores baneados.
+
+log <on/off>
+Activa o desactiva los logs del servidor.
+
+mp_autoteambalance 0
+Auto balance de equipos, 1 para activarlo y 0 para desactivarlo.
+
+mp_c4timer <tiempo>
+Tiempo de explosión desde que se conecta la bomba en segundos.
+
+mp_flashlight 1
+Permite usar linterna, con el 1 la activas y con 0 la desactivas.
+
+mp_footsteps 1
+Para activar el sonido de los pasos.
+
+mp_forcechasecam 0
+Acciona la chasecam para seguir la configuración de los teammates.
+
+mp_freezetime <tiempo>
+Pones el tiempo para poder comprar al principio de cada ronda en segundos.
+
+mp_friendlyfire 1
+Habilita el modo para pegarles a los teammates.
+
+mp_hostagepenalty <número>
+Fija el número de rehenes que puedes matar antes del kick.
+
+mp_limitteams <número>
+Diferencia maxima de jugadores entre los equipos.
+
+mp_logmessages 0
+Activa la posibilidad de registrar los mensajes del chat.
+
+mp_mapvoteratio <numero>
+Ratio de votación (de 0.0 a 1) que fijan los votos minimos para cambio de mapa.
+
+mp_roundtime <tiempo>
+Tiempo del round en minutos.
+
+mp_timelimit <numero>
+Tiempo en minutos máximo entre las rotaciones de cada mapa, 0 es sin tiempo.
+
+rcon <acción>
+Con este comando se puede manejar un servidor por control remoto, anteponer a cada acción la palabra rcon.
+
+rcon_address <IP>
+Setea el IP para conectarse al servidor sin necesidad de estar conectado en el mismo.
+
+rcon_password <pass>
+Setea el password del remote control.
+
+rcon_port <puerto>
+Setea el puerto del remote control.
+
+removeip <IP>
+Remueve el IP de la lista del servidor (sirve para desbanear).
+
+restart
+Reinicia el servidor en el mismo mapa en el que se encuentra.
+
+stat
+Muestra la información sobre los jugadores (encolumnada).
+
+status
+Muestra la información sobre los jugadores.
+
+sv_gravity 800
+Cambia el valor de la gravedad.
+
+sv_password <password>
+Le pone password al server.
+
+sv_restartround <tiempo>
+Hace un restart del mapa en el tiempo indicado en segundos.
+
+sv_restart <tiempo>
+Lo mismo que sv_restartround.
+Comando para las demo
+Comandos para las Demos
+
+Con estos comandos vas a poder manejar las demos, reproducir, grabar, etc.
+
+
+cl_gg 0
+Ejecuta el modo "Game Gauge" (gg corre una demo y al final informa sobre los máximas tasas de FPS).
+
+listdemo <nombredelademo>
+Lista la información de la demo.
+
+playdemo <nombredelademo>
+Reproduce la demo “nombredelademo”, el archivo debe estar dentro de la carpeta Cstrike (ver Stop)
+
+record <nombredelademo>
+Graba una demo en primera persona, la demo se crea en la carpeta cstrike con el “nombredelademo”
+
+timerefresh
+Hace un giro de la visión en ese lugar y visualiza el valor máximo de FPS obtenido.
+
+timedemo <demo>
+Inicia la demo ...Half-LifeValvedemo.dem al maximo de FPS y visualiza después cual fue la tasa de FPS más alta (mirar r_speeds, timerefresh, gg).
+
+stop
+Para la grabacion de la demo que estabamos grabando.
+
+stopdemo
+Finaliza la reproducción de la demo que estabamos viendo.
+
+startmovie <nombre> <fps>
+Permitir sacar .bmp de la demo para despues poder realizar un video. nombre: es el nombre que van a tener los .bmp (osea le podemos poner cualquier nombre), fps: son la cantidad de .bmp que vamos a sacar por segundo.
+
+endmovie
+Se usa después del startmovie para parar la demo.
+
+Viewdemo <nombredelademo>
+Reproduce demos que fueron grabadas con el HLTV para poder usar las opciones de adelantar, retroceder, etc.
+
+
+Comandos para Gráficos/Video
+
+Estos comandos son para poder configurar toda la parte grafica para obtener un mayor rendimiento, o simplemente para configurar a nuestro gusto.
+
+
++graph
+Inicia el visor de net_graph.
+
+adjust_crosshair
+Cambia el color de la mira.
+
+cl_backspeed 400
+Fija la velocidad para retroceder.
+
+cl_bob 0.01
+Fija la cantidad de movimiento mientras el jugador camina.
+
+cl_bobcycle 0.8
+Fija la frecuencia del movimiento mientras el jugador camina.
+
+cl_bobup 0.5
+Fija la cantidad de movimiento al caminar.
+
+cl_forwardspeed 400
+Fija la velocidad para avanzar.
+
+cl_sidespeed 400
+Fija la velocidad para moverse de costado (strafing).
+
+cl_gibcount 4
+Establece el numero de trozos en los que un enemigo se desmembrara al morir.
+
+cl_giblife 25
+Establece el tiempo en segundos para los que los trozos de cuerpo quedarán en el suelo.
+
+cl_gibvelscale 1
+Establece la escala de los gráficos de los trozos de cuerpo. A mayor escala más rendimiento.
+
+cl_himodels 0
+En 1 activa los modelos de alta calidad.
+
+cl_showfps 0
+En 1 activa el visor de FPS.
+
+gl_cull 1
+Activa el renderizado de objetos solo visibles (0 baja FPS).
+
+gl_d3dflip 0
+Activa la orden de renderizado invertido para modo D3D.
+
+cl_minmodels "1"
+Solo muestra modelos LEET y GIGN (aumenta fps).
+
+gl_dither 1
+Activa el suavizado de texturas.
+
+gl_keeptjunctions 1
+Activa un método de unión de texturas, a 1 menos rendimiento.
+
+gl_lightholes 1
+Activa las señales de luz (0 aumenta el rendimiento).
+
+gl_max_size 256
+Fija el tamaño máximo de las texturas (mas tamaño mas calidad y peor rendimiento).
+
+gl_picmip 0
+Fija la calidad de renderizado (0,1,2).
+
+gl_playermip 0
+Fija la calidad de renderizado de los modelos(0,1,2).
+
+gl_round_down 3
+Fija el tamaño de la textura (Un valor mas alto da peor aspecto y más FPS).
+
+gl_smoothmodels 1
+Activa el suavizado de modelos. (0 aumentará un poco los FPS).
+
+gl_spriteblend 1
+Activa los sprites de alta calidad.
+
+gl_texsort 0
+Activa unas texturas vivas y más brillantes, disminuye el rendimiento.
+
+gl_texturemode <tipo>
+Tipo de renderizado (de peor a mejor):
+• GL_NEAREST**
+• GL_LINEAR
+• GL_NEAREST_MIPMAP_NEAREST
+• GL_NEAREST_MIPMAP_LINEAR
+• GL_LINEAR_MIPMAP_NEAREST
+• GL_LINEAR_MIPMAP_LINEAR
+
+gl_wateramp 0
+Activa las ondas de agua amplificadas. 1 disminuye los FPS.
+
+gl_ztrick 1
+Acelera el renderizado en algunas tarjetas 3dfx. Ayuda un poco a la memoria de video para placas viejas.
+
+host_framerate 0
+Fija la velocidad a la que Host y servidor interactúan con el juego.
+
+host_speeds 0
+Activa el visor de los FPS actuales en pantalla.
+
+m_filter 0
+En 1 activa el filtro del mouse (puede hacer que se deslice mas suavemente la pantalla)
+
+max_shells 1
+Define el numero de los cartuchos de las balas saliendo del arma simultaneamente en pantalla (0 es infinito).
+
+max_smokepuffs 1
+Define el numero de 'humitos' simultaneamente mostrados en pantalla.
+
+mp_decals 2000
+Fija el máximo número de marcas que se muestran simultáneamente en el mapa.
+
+net_graph 0
+Inicia la gráfica de Red mostrando FPS, latencia, así como entrada y salida de kb/s. (1, 2 y 3).
+
+net_graphpos 1
+Fija la posición de net_graph en pantalla:
+• 1 Abajo, derecha.
+• 2 Abajo, centro.
+• 3 Abajo, izquierda.
+
+net_graphwidth 192
+Fija el ancho de net_graph.
+
+net_scale 5
+Fija la escala vertical de net_graph.
+
+net_showdrop 0
+En 1 activa el visor de paquetes perdidos.
+
+net_showpackets 0
+En 1 activa el visor de paquetes.
+
+precache 1
+Activa la precarga de todos los archivos necesarios al comenzar el mapa (Evita freeze a 1).
+
+r_drawviewmodel 1
+Visualiza o no el arma en pantalla (en 0 ganas FPS).
+
+r_dynamic 1
+Activa las luces dinámicas (0 aumenta FPS).
+
+r_mirroralpha 1
+Activa las texturas reflectantes (En 0 puede aumentar el performance).
+
+r_mmx 1
+Fuerza los métodos de calculo en CPU MMX.
+
+r_shadows 0
+En 1 activa las sombras (Disminuye el rendimiento y no son demasiado buenas).
+
+r_speeds 0
+Muestra los FPS máximos, velocidad de render y información de polígonos.
+
+r_traceglow 0
+Activa un método de comprobación de luz en los ¿monstruos? (1 disminuirá el rendimiento).
+
+sizedown
+Disminuye el tamaño de pantalla (incrementará los FPS, no funciona en algunas aceleradoras).
+
+sizeup
+Incrementa el tamaño de pantalla (decrecerán los FPS, no funciona en algunas tarjetas).
+
+timerefresh
+Hace un giro de la visión en ese lugar y visualiza el valor máximo de FPS obtenido.
+
+vid_d3d 0
+Activa el soporte Direct3D (Mantenlo desactivado si tu placa soporta OpenGL).
+
+vid_describemode
+Visualiza la configuración de video.
+
+violence_ablood 1
+Activa la sangre (0 Aumenta el rendimiento).
+
+violence_agibs 1
+Activa gibs (Trozos desmembrados). 0 Aumenta el rendimiento.
+
+violence_hblood 1
+Activa mas sangre (0 Aumenta el rendimiento).
+
+violence_hgibs 1
+Aumenta gibs (0 aumentara el rendimiento).
+
+
+Comandos para el Audio
+
+Las opciones de sonido se ajustan con los siguientes comandos.
+
+
+ambient_fade 100
+Fija la distancia en la cual los sonidos ambiente se pierden a lo lejos.
+
+ambient_level 0.3
+Fija el nivel de sonido para los sonidos ambiente.
+
+bgmvolume 0
+Inicia el CD Audio. (El valor 0 puede aumentar el rendimiento).
+
+hisound 0
+Activa sonido de alta calidad (1=22kHz, 0=11kHz). 0 aumenta el rendimiento.
+
+loadas8bit 0
+Valor 1 fuerza sonido a 8-bit (peor calidad).
+
+nosound 0
+Inhabilita los sonidos. (En 1 el juego será silencioso).
+
+soundinfo
+Muestra: canales, samples, samplebits, velocidad, acceso directo de memoria, y canales estéreos de los sonidos.
+
+soundlist
+Muestra todos los sonidos cargados.
+
+stopsound
+Para el sonido actual (ejemplo los grillos de aztec).
+
+s_automax_distance 30
+Fija la distancia para el volumen máximo de sonidos.
+
+s_automin_distance 2
+Fija la distancia para el volumen mínimo de sonidos.
+
+s_a3d 0
+Inicia el soporte A3D (0 aumenta el rendimiento).
+
+s_eax 0
+Inicia el soporte EAX (0 aumenta el rendimiento).
+
+s_enable_a3d
+Activa el sonido A3D.
+
+s_reverb 1
+Inicia el reverb de sonido (0 aumenta el rendimiento).
+
+volume 0.8
+Cambia el volumen del CS.
+Comandos en general
+Comandos en General
+
+Aquí se listan los comandos más conocidos y usados en la consola.
+
+
+drawradar/hideradar
+Activa/desactiva el radar
+
+con_color “RRR GGG BBB”
+Cambia el color de las letras del CS. La cifra de 3 valores representa cada color, rojo, verde y azul.
+
+cl_showfps 0
+Permite visualizar los FPS (cuadros por segundo).
+
+clear
+Limpia (Borra) todo el texto de la consola.
+
+connect <IP>
+Te conectas a la IP seleccionada.
+
+crosshair
+Para activar la mirilla o desactivarla.
+
+developer
+En 1 permite que mediante la función ECHO imprima un mensaje en la pantalla de juego.
+
+disconnect
+Desconecta del servidor activo.
+
+echo <texto>
+Imprime un mensaje en la consola, para imprimir el texto en la pantalla se usa de la siguiente forma: “developer 1; echo “texto”; developer 0”.
+
+exec <nombredeconfig.cfg>
+Ejecuta una configuración (.cfg), este archivo debe encontrarse en la carpeta cstrike.
+
+fps_max
+Fija el máximo número de FPS mientras se juega. (Máximo 100 FPS).
+
+hud_centerid 0
+En 1 aparecen la identificación de los jugadores en el centro de la pantalla.
+
+hud_fastswitch 0
+En 1 activa el cambio rápido de armas.
+
+hud_saytext_time 5
+Establece el tiempo que permanecerán los mensajes en pantalla
+
+hud_takesshots 0
+Activa el auto screenshot al final de cada juego.
+
+kill
+Te matas solo.
+
+listmaps
+Muestra los mapas que hay habilitados en el map cycle del servidor.
+
+listplayers
+Muestra la lista de jugadores en el servidor.
+
+name "nombre"
+Cambia tu nombre.
+
+password <pass>
+Introduce el password para ingresar a un server con pass.
+
+quit
+Sale del juego.
+
+record <nombredelademo>
+Empieza a grabar una demo(nombredelademo.dem). Ver Stop.
+
+retry
+Intenta conectarse de nuevo al servidor.
+
+say <texto>
+Dice "texto" al chat general.
+
+say_team <texto>
+Dice "texto" solo para el equipo.
+
+sensitivity "5.0"
+Sirve para ajustar la sensibilidad del mouse.
+
+screenshot
+Saca un Screen de la pantalla y lo guarda en la carpeta del Half-Life.
+
+setinfo _vgui_menus 0
+Activa los menús en forma abreviada.
+
+stopsound
+Para el sonido actual (ejemplo los grillos de aztec).
+
+timeleft
+Muestra el tiempo restante del mapa.
+
+unbind <tecla>
+Remueve el bind de la letra.
+
+unbindall
+Remueve todos los binds.
+
+volume 0.8
+Cambia el volumen del CS.
+
+vote <numero>
+Vota al jugador "numero" para echarlo del servidor (usar listplayers para sacar el número del jugador).
+
+votemap <numero>
+Vota un mapa de la lista tomado de listmaps.
+
+wait
+Hace una breve pausa en los alias y binds.
+
+zoom_sensitivity_ratio 1.2
+Cambia la sensibilidad del mouse en el zoom.
+
+
+Comandos para los Controles
+
+Aquí se encuentran los comandos mas usados para configurar los controles de movimiento y del mouse.
+
++attack
+Disparo primario.
+
++attack2
+Disparo secundario.
+
++back
+Retroceder.
+
++commandmenu
+Abre el menú de comandos.
+
++duck
+Agacharse.
+
++forward
+Caminar adelante.
+
++jump
+Saltar.
+
++left
+Gira hacia la izquierda.
+
++mlook
+Activa el mouse como mira.
+
++moveleft
+Camina de costado hacia la izquierda (strafe).
+
++moveright
+Camina de costado hacia la derecha (strafe).
+
++reload
+Recargar.
+
++right
+Gira hacia la derecha.
+
++speed
+Caminar si esta en modo autorun, Correr si el autorun esa apagado.
+
++use
+Usar Item (defusar).
+
+changeteam
+Aparece el menú para cambiarse de equipo.
+
+invnext
+Item siguiente en el inventario.
+
+invprev
+Item anterior en el inventario.
+
+lastinv
+Ultimo item seleccionado.
+
+sensitivity "5.0"
+Sirve para ajustar la sensibilidad del mouse.
+
+slot<1-10>
+Menu item 1 al 10.
+
+zoom_sensitivity_ratio 1.2
+Cambia la sensibilidad del mouse en el zoom.
+Comandos de ajuste de mira
+Comandos de Ajuste de Mira
+
+cl_crosshair_size small medium o large
+cl_crosshair_color "RRR GGG BBB" (Recuerden q si no usamos las comillas debemos poner un signo '+' entre cada valor numérico)
+cl_crosshair_translucent 0 ó 1
+0 = traslucida
+1 = solida
+
+
+Comandos de Radar
+
+cl_radartype 0 ó 1
+0 = radar traslucido
+1 = radar solido
+
+
+Info sobre cómo usar "echo's" en la 1.6:
+
+Como todos sabemos el sistema de echo's y developers no funciona mas. Este no es solo un problema del Counter-strike; sino que todos los programas del steam sufren del mismo inconveniente.
+
+Actualmente se descubrio un sistema un tanto mas complejo de echos por Mordillo666[GER]. Desafotunadamente, este sistema solo permite una sola linea a la vez, y sin espacios.
+
+Basicamente, estas engañando al sistema para que crea que estas ejecutando un alias inexistente. Opuestamente al conocido: "Unknown command: %s(comando)", solo se veria esto: "%s(comando)". Por lo tanto, podemos usar alias o comandos indefinidos como echos.
+
+Primero, abri un archivo llamado "titles.txt" en la carpeta de tu CS, con el Notepad. Luego, ubica la siguientes lineas:
+
+Game_unknown_command
+{
+unknown command: %s
+}
+
+Y reemplazalas por estas otras:
+
+Game_unknown_command
+{
+%s
+}
+
+En CS 1.5, usabamos los siguientes comandos para mostrar un echo en pantalla:
+
+developer 1; echo Hello World!; developer 0
+
+En CS 1.6, lo haremos sin developers ni echos:
+
+Hello_World!
+
+Noten que hay un guion bajo entre las dos palabras. Los espacios no son mostrados, y el resto del texto no se muestra depsues del primero q usemos.
+
+Para terminar, tambien, estos "echos falsos" solo se pueden usar si estas vivo.
+
+
+Autobuy & Rebuy (by Chakan)
+
+Aca les voy a explicar como funciona las nuevas opciones de autobuy y rebuy en el Counter-Strike 1.6
+
+
+¿Cómo funcionan?
+
+Primero, en la carpeta c:Valvecstrike (NoSteam) - c:Archivos de ProgramaSteamSteamAppstumail@tumailserver.comc ounter-strikecstrike (Steam) se encuentran los siguientes archivos:
+autobuy.txt - Compra automaticas
+rebuy.txt - Compra lo mismo que compraste el round anterior
+Con estos archivos se hace lo siguiente:
+
+Autobuy: En este archivo debemos poner una lista de las armas que nos interesa comprar. Hacemos una lista de armas primarias, según el dinero que dispongamos en la ronda va a comprar la primera o la ultima de la lista. También así con las armas secundarias y demas categorias. Por ejemplo, si ponemos:
+
+awp
+m4a1
+mp5
+
+Va a tratar de comprar el Artic, si con el dinero que tenias pudo comprarlo no te va a comprar la colt ni la navy.
+
+Estos son los nombres segun cada arma que se pueden utilizar en este archivo (los mismos que posteo piojoso):
+
+// galil - IDF Defender
+// defender - IDF Defender
+// ak47 - CV-47
+// cv47 - CV-47
+// scout - Schmidt Scout
+// sg552 - Krieg 552
+// krieg552 - Krieg 552
+// awp - Magnum Sniper Rifle
+// magnum - Magnum Sniper Rifle
+// g3sg1 - D3/AU1
+// d3au1 - D3/AU1
+// famas - Clarion 5.56
+// clarion - Clarion 5.56
+// m4a1 - Maverick M4A1 Carbine
+// aug - Bullpup
+// bullpup - Bullpup
+// sg550 - Krieg 550 Commando
+// krieg550 - Krieg 550 Commando
+// glock - 9x19mm Sidearm
+// 9x19mm - 9x19mm Sidearm
+// usp - KM .45 Tactical
+// km45 - KM .45 Tactical
+// p228 - 228 Compact
+// 228compact - 228 Compact
+// deagle - Night Hawk .50C
+// nighthawk - Night Hawk .50C
+// elites - .40 Dual Elites
+// fn57 - ES Five-Seven
+// fiveseven - ES Five-Seven
+// m3 - Leone 12 Gauge Super
+// 12gauge - Leone 12 Gauge Super
+// xm1014 - Leone YG1265 Auto Shotgun
+// autoshotgun - Leone YG1265 Auto Shotgun
+// mac10 - Ingram MAC-10
+// tmp - Schmidt Machine Pistol
+// mp - Schmidt Machine Pistol
+// mp5 - KM Sub-Machine Gun
+// smg - KM Sub-Machine Gun
+// ump45 - KM UMP45
+// p90 - ES C90
+// c90 - ES C90
+// m249 - M249
+// primammo - Primary Ammo
+// secammo - Secondary Ammo
+// vest - Kevlar
+// vesthelm - Kevlar+Helmet
+// flash - Flashbang
+// hegren - HE Grenade
+// sgren - Smoke Grenade
+// nvgs - Nightvision
+// defuser - Defusal Kit
+// shield - Tactical Shield
+
+Aca les dejo un ejemplo que sirve para Counter-Terrorist y Terrorist:
+m4a1
+famas
+ak47
+galil
+mp5
+deagle
+
+primammo
+secammo
+
+defuser
+
+vesthelm
+vest
+
+
+Rebuy: Este comando memoriza lo que compraste en el round anterior y vuelve a comprarlo. Acomodalo según tu estilo de juego en caso de que te quedes corto de dinero y no puedas comprar todo lo que compraste en la ronda anterior, que cosas queres primero y que despues.
+
+Variables (son Case Sensitive):
+
+
+// PrimaryWeapon - Cualquier arma que entre en el slot 1
+// PrimaryAmmo - Municion para el arma en el slot 1
+// SecondaryWeapon - Cualquier arma que entre en el slot 2
+// SecondaryAmmo - Municion para el arma ubicada en el slot 2
+// Defuser - Defuse kit
+// Armor - Chaleco, Chaleco+Casco
+// HEGrenade - HE Grenade
+// Flashbang - Flashbang
+// SmokeGrenade - Granada de Humo
+// NightVision - Anteojos VisionNocturna
+
+Un Ejemplo:
+PrimaryWeapon
+PrimaryAmmo
+Defuser
+Armor
+HEGrenade
+Flashbang
+SecondaryWeapon
+SecondaryAmmo
+
+
+Listo, ya habiendo configurado los archivos solo nos queda bindear cualquier tecla que querramos en nuestro config.cfg con estos comandos.
+
+bind "F3" "autobuy"
+bind "F4" "rebuy"

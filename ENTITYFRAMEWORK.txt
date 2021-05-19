@@ -1,0 +1,18 @@
+Add-Migration InitialCreate  ===========================> Crea las tablas en c#. Es importante tener el MicrosoftEntityFrameworkCore.Tools En InitialCreate es el nombre de fantasia para identificar la migracion
+Update-Database ========================================> Crea la base de datos en SQL server.
+Remove-Migration =======================================> Remueve la migracion.
+
+
+Ejemplos de cadenas de conexion:
+"PizzaStore": "Server=(localdb)\\mssqllocaldb;database=PizzaStore"
+@"Server=localhost;Database=IdentityServerCourse;Trusted_Connection=True"
+
+"PizzaStore": "Server= PRIXUS; Database=PizzaStore; User Id=sa; Password=; Trusted_Connection=true; MultipleActiveResultSets=true;"
+
+"ConnectionStrings": {
+  "DefaultConnection": "Server=myServerAddress; Database=myDataBase; User Id=myUsername; Password=myPassword; Trusted_Connection=false; MultipleActiveResultSets=true;"
+}
+
+"ConnectionStrings": {       
+  "DefaultConnection": "Server=myServerAddress; Database=myDataBase; Trusted_Connection=True; MultipleActiveResultSets=true"        
+} 

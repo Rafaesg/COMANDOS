@@ -4,3 +4,12 @@ dotnet new --list =================> Mustra los modelos disponibles para crear u
 dotnet new mvc --help =============> Muestra los template disponibles para mvc.
 dotnet new mvc --auth Individual ==>Crea un proyecto MVC con autenticacion individual.
 
+BLAZOR
+
+dotnet new blazorwasm --help =======> Muestra los templates del web assembly.
+dotnet new blazorserver --help ====> Mustra los templates del lado del servidor.
+
+dotnet new blazorserver -o TodoList ==> Crea un proyecto con el template selecionado
+dotnet new blazorwasm -ho ==========> Crea un proyecto con el template hosted.
+
+ Install-Package Microsoft.AspNet.Mvc -Version 3.0.50813.1 ======> Instala System.web.mvc

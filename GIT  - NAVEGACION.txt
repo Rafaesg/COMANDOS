@@ -39,7 +39,9 @@ git add .  ==========================================> Agregar todos los archivo
 git reset <archivo>  ================================> Lo contrario de add saca archivos de staging area
 git commit --amend -m '{Nuevo mensaje del commit}'===> Cambia el titulo del ultimo commit
 git checkout {nombre del archivo} ===================> Quita las modificaciones del archivo
-git reset --hard HEAD~1 ========================================>Elimina el ultimo commit
+git reset --hard HEAD~1 =============================> Elimina el ultimo commit
+git reset --soft HEAD~1 =============================> Elimina el ultimo commit pero no borra los cambios en en Staging Area.
+git push origin master -f ===========================> Forza a subir los cambios 
 
 RAMAS
 git branch ==========================================> Muestra las versiones alternativas del codigo
@@ -99,5 +101,11 @@ ________________________________________________________________________________
 	3-Discard all local changes to all files permanently ---------------------> git reset --hard
 ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••↑
 
+________________________________________________________________________________________________________________________↓
+ACTUALIZAR GITIGNORE
 
+	1-Remover todos los archivos agregados------------------------------------> git rm -r --cached .
+	2-Agregar los archivos respetando las excepciones del gitignore-----------> git add .
+	3-Realizar commit con los archivos agregados         ---------------------> git commit -m ".gitignore is now working"
+••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••↑
 

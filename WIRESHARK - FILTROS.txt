@@ -1,0 +1,4 @@
+Filtros:
+
+dns  ---> Muestra los paquetes relacionados con el dns
+http ---> Peticiones
