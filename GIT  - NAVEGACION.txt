@@ -41,7 +41,7 @@ git commit --amend -m '{Nuevo mensaje del commit}'===> Cambia el titulo del ulti
 git checkout {nombre del archivo} ===================> Quita las modificaciones del archivo
 git reset --hard HEAD~1 =============================> Elimina el ultimo commit
 git reset --soft HEAD~1 =============================> Elimina el ultimo commit pero no borra los cambios en en Staging Area.
-git push origin master -f ===========================> Forza a subir los cambios 
+git push origin <<NombreRama>> -f ===========================> Forza a subir los cambios 
 
 RAMAS
 git branch ==========================================> Muestra las versiones alternativas del codigo
@@ -53,7 +53,7 @@ git checkout <<rama en la que se desea trabajar>> ===> Cambia de rama
 
 MERGE
 git merge --abort  ==================================> Abortar merge
-git merge <<Rama  que va a ser absorvida>> ========> tiene que hacerse desde la rama absorvedora
+git merge <<Rama  que va a ser absorvida>> ==========> Tiene que hacerse desde la rama absorvedora
 
 OTROS
 git tag v0.0.1 -m "Esta es mi primera version" ======> Agregar tags de version
