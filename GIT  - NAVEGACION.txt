@@ -1,6 +1,6 @@
-NOTAS
+﻿NOTAS
 ♦ Cada vez que se trabaja en el bash se deben cerrar el Visual Studios y descartar cambios en el GITHUB
-
+♦ Rafael
 
 BASH
 cd =================================================> change directory
